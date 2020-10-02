@@ -4,13 +4,11 @@ public class FovAdjuster : MonoBehaviour
 {
     public FovPoint[] FocusPoints;
 
-
     private void OnDrawGizmos()
     {
         Camera camera = GetComponent<Camera>();
 
         Vector2 cameraDirectionProjectedSpace = Vector2.right;
-        Vector2 cameraPosition = camera.transform.position;
 
         float angleCameraToBounds = float.MinValue;
 
